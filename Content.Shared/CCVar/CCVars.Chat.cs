@@ -83,4 +83,11 @@ public sealed partial class CCVars
     /// </summary>
     public static readonly CVarDef<string> ChatHighlightsColor =
         CVarDef.Create("chat.highlights_color", "#17FFC1FF", CVar.CLIENTONLY | CVar.ARCHIVE, "The color in which the highlights will be displayed.");
+
+    /// <summary>
+    /// Comma-separated list of radio channel prototype IDs that the client has chosen to hide.
+    /// Empty means no channels are filtered.
+    /// </summary>
+    public static readonly CVarDef<string> ChatFilteredRadioChannels =
+        CVarDef.Create("chat.filtered_radio_channels", "", CVar.CLIENTONLY | CVar.ARCHIVE, "Comma-separated list of radio channel IDs to hide from the chat.");
 }
